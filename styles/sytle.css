@@ -1,0 +1,291 @@
+:root {
+    --card_width: 250px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+    --card_vincent: 48;
+}
+/* navbar */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1E1D40;
+    color: white;
+}
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand{
+    height: 35px;
+    filter: brightness(0) invert(1);
+}
+
+.nav-link{
+    margin-right: 30px;
+}
+
+
+
+/* jumbotron */
+.jumbotron{
+    background-image: url(/img/moon1.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    /* margin-top: -75px; */
+}
+@font-face {
+    font-family: 'carousel';
+    src: url('carousel-webfont.woff2') format('woff2'),
+         url('carousel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.jumbotron .container{
+    font-family: 'carousel', sans-serif;
+    position: relative;
+    z-index: 1;
+    text-shadow: 5px 5px 5px #311E59;
+}
+
+.jumbotron .container h1{
+    font-size: 32px;
+    text-shadow: 2.5px 2.5px 2.5px #311E59;
+    letter-spacing: 5px;
+}
+
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    /* background-color: black; */
+    position: absolute;
+    bottom: 0;
+}
+.container .display-4{
+    color: white !important;
+    /* font-size: 62px; */
+     /* margin-top: 130px; */
+    
+}
+
+.jumbotron .container .display-4 span{
+   font-weight: 500; 
+}
+
+/* info panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: #9023D9;
+    position: relative;
+    z-index: 1;
+}
+.lnt-brand{
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+.info-panel h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-size: 35px;
+}
+.info-panel h3 span{
+    font-family: viga;
+    
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* margin-top: ; */
+}
+
+.info-panel p{
+    font-size: 14px;
+    color: white;
+}
+
+/* workingspace */
+
+.logo-bncc{
+    justify-content: center;
+}
+.present-logo{
+    height: 45px;
+    filter: brightness(0) invert(1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.teks{
+    text-align: center;
+}
+.teks h4{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.teks h4 span{
+    font-weight: bold;
+    /* font-family: viga; */
+}
+.teks p{
+    font-size: 16px;
+}
+
+.testi h1{
+    font-family: 'carousel', sans-serif;
+    font-size: 42px;
+    text-shadow: 2.5px 2.5px 2.5px #311E59;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.pin_container {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+
+    background-color: #311E59;
+}
+
+.card {
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: #AD1FBF;
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+}
+
+.card_vincent {
+    grid-row-end: span var(--card_vincent);
+}
+
+.card_vincent img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card_vincent footer{
+    color: white;
+}
+.footer{
+    color: white;
+    font-weight: lighter;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .navbar-brand{
+        font-family: viga;
+        font-size: 32px;
+        color:white !important;
+        text-shadow: 1px 1px 1px grey;
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.747) !important;
+        text-shadow: 1px 1px 1px grey;
+
+    }
+    .nav-link:hover{
+        color: white !important;
+    }
+    .nav-link span{
+        color:white !important;
+    }
+
+    .nav-link span::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid#AD1FBF;
+        width: 50%;
+        margin:auto;  
+    }
+  
+    .nav-link span:hover::after{
+        width: 75%;  
+    }
+    /* jumbotron */
+    .jumbotron{
+        /* background-image: url(anu.jpeg); */
+        /* background-size: cover; */
+        height: 600px;
+        margin-top: -75px;
+        z-index: 0;
+    }
+
+    .jumbotron .container h1{
+        /* color: white !important; */
+        font-size: 75px;
+        margin-top: 40px;
+        text-shadow: 1px 1px 1px grey;
+        
+    }
+
+    .jumbotron .container .display-4 span{
+    font-weight: 500; 
+    }
+
+    .teks h4{
+        margin-top: 0px;
+        font-size: 45px;
+    }
+    .present-logo{
+        height: 75px;
+    }
+
+    .testi h1{
+        font-size: 75px;
+    }
+    .teks {
+        margin-top: 70px;
+        /* text-align: left; */
+    }
+    .teks p{
+        font-size: 20px;
+        /* text-align: left; */
+    }
+  /* testi */
+    .testi .card-left{
+        padding-left: 2.5%;
+    }
+    .testi .card-right{
+        padding-right: 2.5%;
+    }
+}
