@@ -11,6 +11,10 @@
 ### Gimana cara berkontribusi di Hactoberfest?
 Secara sederhana, cara berkontribusi dengan hacktoberfest adalah dengan membuat pull request ke project yang terdapat #hacktoberfest. Lakukan 4 pull request agar kalian mendapat hadiah dari Hacktoberfest!
 
+### Tutorial Demo Website
+
+[![IMAGE ALT TEXT HERE](https://github.com/JayaByu/bnccmalang-hacktoberfest2022/blob/main/asset.md/SS.png)](https://binusianorg-my.sharepoint.com/personal/vincent061_binus_ac_id/Documents/video2876718447.mp4?csf=1&web=1&e=yzmQzr)
+
 > ### **Tips Membuat *pull request***
 > Agar pull request yang kamu buat tidak dianggap spam, ada baiknya mengikuti tips berikut.
 >1. Membuka Repository BNCC yang terdapat pada [link berikut](https://github.com/BNCC-Malang/bnccmalang-hacktoberfest2022) -> kalian sudah berada di halaman yang tepat
