@@ -31,7 +31,7 @@ body{
 
 /* jumbotron */
 .jumbotron{
-    background-image: url(/img/moon1.jpg);
+    background-image: url(images/moon1.jpg);
     background-size: cover;
     height: 500px;
     text-align: center;
