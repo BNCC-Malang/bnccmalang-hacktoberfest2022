@@ -6,6 +6,7 @@
     --card_medium: 33;
     --card_large: 45;
     --card_vincent: 48;
+    --card_adi: 56;
 }
 /* navbar */
 body{
@@ -31,7 +32,7 @@ body{
 
 /* jumbotron */
 .jumbotron{
-    background-image: url(images/moon1.jpg);
+    background-image: url(/images/moon1.jpg);
     background-size: cover;
     height: 500px;
     text-align: center;
@@ -203,6 +204,30 @@ body{
 .card_vincent footer{
     color: white;
 }
+
+.card_adi {
+    grid-row-end: span var(--card_adi);
+    background-color: orangered;
+}
+
+.card_adi img{
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card_adi .card-body{
+    background-color: white;
+    color: #252525;
+}
+
+.population{
+    margin-top: 5px;
+}
+
+.population p{
+    font-size: 10px;
+    margin-top: -8px;
+}
+
 .footer{
     color: white;
     font-weight: lighter;
