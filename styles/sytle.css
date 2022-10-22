@@ -238,7 +238,9 @@ body{
     color: white;
 }
 
-
+.card_desta img {
+    border-radius: 16px 16px 0px 0px;
+}
 
 
 .population{
