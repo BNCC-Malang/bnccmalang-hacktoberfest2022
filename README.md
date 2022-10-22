@@ -53,4 +53,6 @@ Secara sederhana, cara berkontribusi dengan hacktoberfest adalah dengan membuat 
 >Kalau ada kendala, bisa didiskusikan ke group
 >
 
-### Terimakasih telah berpartisipasi dalam event ini.
+### Terimakasih telah berpartisipasi dalam event ini. 
+
+Tes
